@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Phishing Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Phishing Quiz</h1>
+
+<p>Choose the correct answer for each question!</p>
+<p id="score">Score: 0 out of 5</p>
+
+<h3>Question 1</h3>
+<p>You receive a message saying your account will be closed unless you click a link. What should you do?</p>
+
+<button onclick="countCorrect(1, true); alert('Correct! Never rush to click suspicious links.')">Check if the message is real through the official website</button>
+
+<button onclick="countCorrect(1, false); alert('Not quite! The link could steal your information.')">Click the link immediately</button>
+
+<h3>Question 2</h3>
+<p>Which is a warning sign of phishing?</p>
+
+<button onclick="countCorrect(2, true); alert('Correct! Unexpected messages asking for personal information can be suspicious.')">A message asks for your password urgently</button>
+
+<button onclick="countCorrect(2, false); alert('Not quite! A familiar name does not always mean a message is safe.')">The sender uses your first name</button>
+
+<h3>Question 3</h3>
+<p>Do you believe two-factor authentication is a waste of time?</p>
+
+<button onclick="countCorrect(3, false); alert('Not quite! Two-factor authentication adds another layer of security.')">Yes, it is</button>
+
+<button onclick="countCorrect(3, true); alert('Correct! Two-factor authentication adds another layer of security to your account.')">No, it is not</button>
+
+<h3>Question 4</h3>
+<p>What should you do if you accidentally click a suspicious link?</p>
+
+<button onclick="countCorrect(4, true); alert('Correct! Report it and take steps to secure your account.')">Report it and secure my account</button>
+
+<button onclick="countCorrect(4, false); alert('Not quite! Ignoring it could leave your information at risk.')">Ignore it completely</button>
+
+<h3>Question 5</h3>
+<p>Which message is most likely to be phishing?</p>
+
+<button onclick="countCorrect(5, true); alert('Correct! Unexpected urgent requests for money can be a warning sign.')">URGENT: Send money now to claim your prize!</button>
+
+<button onclick="countCorrect(5, false); alert('Not quite! A routine announcement from the official school portal is less suspicious, though you should still check unexpected messages.')">A routine school announcement from the official school portal</button>
+
+<div class="final-score">
+    <button onclick="alert('You scored ' + score + ' out of 5!')">See Final Score</button>
+</div>
+
+<p><a href="quizzes.html">Back to Quizzes</a></p>
+<p><a href="index.html">Back to Home</a></p>
+
+<script>
+let score = 0;
+let answeredQuestions = [];
+
+function countCorrect(questionNumber, isCorrect) {
+    if (!answeredQuestions.includes(questionNumber)) {
+        answeredQuestions.push(questionNumber);
+
+        if (isCorrect) {
+            score = score + 1;
+        }
+
+        document.getElementById("score").textContent =
+            "Score: " + score + " out of 5";
+    }
+}
+</script>
+
+</body>
+</html>

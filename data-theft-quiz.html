@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Data Theft Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Data Theft Quiz</h1>
+
+<p>Choose the correct answer for each question!</p>
+<p id="score">Score: 0 out of 5</p>
+
+<h3>Question 1</h3>
+<p>What is data theft?</p>
+
+<button onclick="countCorrect(1, true); alert('Correct! Data theft involves stealing personal or confidential information without permission.')">Stealing information without permission</button>
+
+<button onclick="countCorrect(1, false); alert('Not quite! Saving your own schoolwork is not data theft.')">Saving your own schoolwork</button>
+
+<h3>Question 2</h3>
+<p>You discover that someone has logged into your social media account and changed your email address. What should you do first?</p>
+
+<button onclick="countCorrect(2, true); alert('Correct! Use the official recovery process, secure your account, and change your password.')">Secure the account and use official recovery</button>
+
+<button onclick="countCorrect(2, false); alert('Not quite! Ignoring the problem could allow someone to keep accessing your account.')">Ignore it</button>
+
+<h3>Question 3</h3>
+<p>Which of these could put your personal data at risk?</p>
+
+<button onclick="countCorrect(3, true); alert('Correct! Sharing your password can let others access your accounts.')">Sharing your password with others</button>
+
+<button onclick="countCorrect(3, false); alert('Not quite! Locking your device helps protect your personal information.')">Locking your device when you leave it</button>
+
+<h3>Question 4</h3>
+<p>What should you do before entering personal details on a website?</p>
+
+<button onclick="countCorrect(4, false); alert('Not quite! A professional-looking website can still be fake.')">Trust it because it looks professional</button>
+
+<button onclick="countCorrect(4, true); alert('Correct! Check the website address and make sure the site is legitimate before sharing information.')">Check that the website is legitimate</button>
+
+<h3>Question 5</h3>
+<p>What should you do if you think someone has stolen your personal data?</p>
+
+<button onclick="countCorrect(5, true); alert('Correct! Secure affected accounts, change passwords, and report the incident to the relevant service.')">Secure your accounts and report it</button>
+
+<button onclick="countCorrect(5, false); alert('Not quite! Accusing someone without evidence is not a safe way to handle the situation.')">Accuse them</button>
+
+<button onclick="countCorrect(5, false); alert('Not quite! Ignoring the problem could allow someone to keep accessing your account.')">Ignore it and continue using the account</button>
+
+<div class="final-score">
+    <button onclick="alert('You scored ' + score + ' out of 5!')">See Final Score</button>
+</div>
+
+<p><a href="quizzes.html">Back to Quizzes</a></p>
+<p><a href="index.html">Back to Home</a></p>
+
+<script>
+let score = 0;
+let answeredQuestions = [];
+
+function countCorrect(questionNumber, isCorrect) {
+    if (!answeredQuestions.includes(questionNumber)) {
+        answeredQuestions.push(questionNumber);
+
+        if (isCorrect) {
+            score = score + 1;
+        }
+
+        document.getElementById("score").textContent =
+            "Score: " + score + " out of 5";
+    }
+}
+</script>
+
+</body>
+</html>

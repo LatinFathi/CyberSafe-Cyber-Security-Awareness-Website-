@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cyberbullying Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Cyberbullying Quiz</h1>
+
+<p>Choose the correct answer for each question!</p>
+<p id="score">Score: 0 out of 5</p>
+
+<h3>Question 1</h3>
+<p>What should you do if someone is bullying you online?</p>
+
+<button onclick="countCorrect(1, true); alert('Correct! Save evidence and talk to a trusted adult.')">Save evidence and tell a trusted adult</button>
+
+<button onclick="countCorrect(1, false); alert('Not quite! Replying with insults can make the situation worse.')">Insult them back</button>
+
+<h3>Question 2</h3>
+<p>What is cyberbullying?</p>
+
+<button onclick="countCorrect(2, false); alert('Not quite! Sharing a funny post is not automatically bullying.')">Sharing a funny post with friends</button>
+
+<button onclick="countCorrect(2, true); alert('Correct! Cyberbullying involves using digital platforms to hurt, threaten, or harass someone.')">Using digital platforms to hurt or harass someone</button>
+
+<h3>Question 3</h3>
+<p>What should you do if you witness someone being cyberbullied?</p>
+
+<button onclick="countCorrect(3, true); alert('Correct! Support the person, report the bullying, and tell a trusted adult when needed.')">Support them and report the bullying</button>
+
+<button onclick="countCorrect(3, false); alert('Not quite! Sharing hurtful content can spread the bullying further.')">Share the hurtful post with others</button>
+
+<h3>Question 4</h3>
+<p>Why should you keep evidence of cyberbullying?</p>
+
+<button onclick="countCorrect(4, true); alert('Correct! Screenshots and messages can help when reporting the behaviour.')">It can help prove what happened</button>
+
+<button onclick="countCorrect(4, false); alert('Not quite! Evidence is useful for reporting, not for embarrassing the person later.')">So you can embarrass the person later</button>
+
+<h3>Question 5</h3>
+<p>Which is an example of cyberbullying?</p>
+
+<button onclick="countCorrect(5, true); alert('Correct! Repeatedly sending hurtful messages is a form of online harassment.')">Repeatedly sending someone hurtful messages</button>
+
+<button onclick="countCorrect(5, false); alert('Not quite! Respectfully disagreeing with someone is not automatically bullying.')">Disagreeing with someone's opinion</button>
+
+<div class="final-score">
+    <button onclick="alert('You scored ' + score + ' out of 5!')">See Final Score</button>
+</div>
+
+<p><a href="quizzes.html">Back to Quizzes</a></p>
+<p><a href="index.html">Back to Home</a></p>
+
+<script>
+let score = 0;
+let answeredQuestions = [];
+
+function countCorrect(questionNumber, isCorrect) {
+    if (!answeredQuestions.includes(questionNumber)) {
+        answeredQuestions.push(questionNumber);
+
+        if (isCorrect) {
+            score = score + 1;
+        }
+
+        document.getElementById("score").textContent =
+            "Score: " + score + " out of 5";
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,390 @@
+
+
+H1 { 
+	color: purple;
+	text-align: center;
+}
+
+body { 
+	background-color: lavender;
+	font-family: Arial;
+}
+
+P {
+    color: lavender;
+    font-size: 16px;
+}
+
+H2 {
+	color: hotpink;
+}
+
+Ul {
+	color: yellow;
+	line-height: 2;
+        Font-weight: bold;
+}
+
+a {
+	color: thistle;
+}
+
+Button { 
+	background-color: purple;
+	color: white;
+	font-size: 20px;
+	padding: 12px 25px;
+	border-radius: 10px;
+	margin-left: 38%;
+	font-weight: bold;
+	margin-left: 0;
+}
+
+h3 {
+    color: hotpink;
+    font-size: 24px;
+}
+
+.phishing {
+    background-image: url("background2.jpeg");
+    background-color: lavender;
+    
+}
+
+.back-home button {
+    Background-color: thistle;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-left: 0;
+}
+
+#strong {
+    border: 3px solid green;
+    padding: 20px;
+    min-height: 150px;
+    width: 250px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#weak {
+    border: 3px solid red;
+    padding: 20px;
+    min-height: 150px;
+    width: 250px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#strong, #weak {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+
+#password-list {
+    background-color: white;
+    border: 3px solid purple;
+    border-radius: 12px;
+    padding: 15px;
+    width: 300px;
+}
+
+#password-list p {
+    background-color: lavender;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: grab;
+}
+
+
+body:has(#password-list) {
+    background-image: url("backgroundbgg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body:has(#password-list) ul {
+    color: white;
+}
+
+body.privacy {
+    background-image: url("privacybgg.jpeg");
+}
+
+body.privacy h1 {
+    color: lightblue;
+}
+
+body.cyberbullying {
+    background-image: url("1234.jpeg");
+}
+
+body.cyberbullying h1 {
+    color: black;
+    Font-weight: bold;
+    Font-size: 50px;
+}
+
+Body.cyberbullying p {
+    Color: lavender;
+    Font-weight: bold;
+}
+
+Body.cyberbullying h3 {
+    Color: darkmagenta;
+}
+
+Body.cyberbullying ul {
+    Color: lightgreen;
+}
+
+body.cyberbullying ul.help-list {
+    color: red;
+}
+
+body.malware {
+    background-image: url("bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body:has(h1) h1 {
+    Color: Lavender;
+    Font-weight: bold;
+    Font-size: 50px;
+}
+
+body:has(p) p {
+    Color: lightpink;
+    Font-weight: bold;
+}
+
+body.malware img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+Body.malware ul {
+    Color: orange;
+}
+body.data-theft {
+    background-image: url("datatheft.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body.data-theft h1 {
+    color: lavender;
+}
+
+#feedback {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#progress-bar {
+    width: 300px;
+    height: 25px;
+    accent-color: purple;
+}
+
+#topics + ul {
+    list-style: disc;
+    Padding-left: 40px;
+}
+
+button[onclick^="completeTopic"] {
+    margin-left: 10px;
+    font-size: 12px;
+    padding: 5px 10px;
+    vertical-align: middle;
+}
+
+Body.homepage ul {
+    Font-size: 20px;
+}
+
+Body:has(h1) h1 {
+    Color: black;
+    Font-weight: bold;
+}
+
+body.homepage a[href="#topics"] button {
+    background-color: hotpink;
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 20px;
+}
+
+body.homepage #progress-text {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.quiz-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    max-width: 700px;
+}
+
+.quiz-card {
+    display: block;
+    background-color: lavender;
+    border: 2px solid purple;
+    border-radius: 12px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.quiz-card h2 {
+    color: purple;
+}
+
+.quiz-card p {
+    color: #333333;
+}
+
+.quiz-card:hover {
+    background-color: thistle;
+}
+
+body.quiz-page {
+    background-image: url("backgroundd.jpeg");
+    background-color: lavender;
+}
+
+.final-score {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.final-score button {
+    background-color: hotpink;
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 20px;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+body.homepage a[href="quizzes.html"] {
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+body.homepage {
+    background-image: url("backgroundd.jpeg");
+}
+
+body.homepage ul {
+    font-size: 22px;
+    line-height: 2.2;
+    Color: lightpink;
+}
+
+body.homepage .take-quiz {
+    text-align: center;
+}
+
+body.homepage .take-quiz button {
+    background-color: hotpink;
+    color: white;
+    font-size: 24px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    padding: 14px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+body:has(#password-list) h1 {
+    color: Yellow;
+}
+
+body.malware h1 {
+    color: purple;
+    Font-weight: bold;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+body.malware p {
+    color: lavender;
+}
+
+body.malware h3 {
+    color: lightpink;
+}
+
+body.data-theft h1 {
+    color: lavender;
+}
+
+.back-quizzes {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+#score {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: purple;
+    margin: 20px auto;
+}
+
+body:has(#score) p:not(#score) {
+    color: blue;
+}
+
+body.quiz-page > p {
+    color: hotpink;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#progress {
+    text-align: center;
+    color: hotpink;
+    margin: 20px auto;
+}
+
+progress {
+    display: block;
+    margin: 10px auto;
+}
+
+#progress-text {
+    text-align: center;
+    color: lightblue;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+.homepage ul li a {
+    color: magenta;
+}
+
+.homepage ul li button {
+    font-size: 13px;
+    padding: 8px 14px;
+}
